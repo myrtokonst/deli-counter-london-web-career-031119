@@ -17,5 +17,10 @@ puts "Welcome, #{name}. You are number #{katz_deli.index(name)+1} in line."
 end 
 
 def now_serving(katz_deli)
-
+if katz_deli==[]
+  puts "There is nobody waiting to be served!"
+else
+  katz_deli.shift()
+  puts "Now serving #{katz_deli.shift}." 
+end 
 end 
